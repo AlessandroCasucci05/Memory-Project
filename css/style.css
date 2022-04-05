@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0.3em;
+    color:rgb(241, 190, 6);
+    text-shadow: 1px 1px 4px rgb(241, 190, 6);
+}
+
+h1:hover{
+    color:red;
+    cursor: pointer;
+}
+
+.griglia{
+    display: flex;
+    flex-wrap:wrap;
+    width: 42vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 3px;
+    perspective: 1000px;
+}
+
+.card{
+    background-color: red;
+    width: 7vw;
+    height: 15vh;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    cursor: pointer;
+    
+}
+
+#verde{
+    background-color: green;
+}
+
+.card p{
+    display: none;
+}
+
+
+
+.ruota{
+    transform: rotateY(180deg);
+    transform-style:preserve-3d;
+    transition: transform .2s;
+    
+}
+
+
+
+.card:hover{
+    background-color: rgb(158, 41, 41);
+}
+
+
+.dati{
+    display: flex;
+    font-size: 2rem;
+    width: 40vw;
+    height: 10vh;
+    margin: auto;
+    margin-top: 2em;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.dati p{
+    text-align: center;
+
+}
+
+.dati button{
+    font-size: 1.3rem;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.dati button:hover{
+    background-color: green;
+    color: white;
+    
+}
+
+.modale{
+    background-color: rgb(255, 196, 0);
+    width: 40vw;
+    border-radius: 7px;
+    height: 48vh;
+    position: absolute;
+    top:12em;
+    left:30vw;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chiudi{
+    font-size: 3rem;
+    position: absolute;
+    color: red;
+    top:-2em;
+    right: 0.5em;
+    cursor: pointer;
+}
+
+
+
+.modale h2{
+   text-align: center;
+   font-size: 3rem;
+   padding-top: 0.7em;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modale p{
+    margin-top: 2em;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.dinuovo{
+    padding: 1em;
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    background-color: green;
+    color:white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.nome{
+    background-color: rgb(255, 213, 0);
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    top:4em;
+    right: 35vw;
+    border-radius: 3px;
+    display: block;
+}
+
+.nome h2{
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 2em;
+}
+
+.nome input{
+   font-size: 2rem;
+   width: 100%;
+   margin: auto;
+}
+
+.nome form{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nome button{
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 3px;
+    background-color: green;
+    margin-top: 1em;
+    padding: 0.3em;
+    
+}
+
+.classifica{
+    background-color: red;
+    color: white;
+    border:none;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 3px;
+}
+
+
+.tabella{
+    
+    width: 60vw;
+    height: 100vh;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2rem;
+}
+
+.row{
+    background-color: rgb(255, 191, 0);
+    height: 10vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.row div {
+    font-size: 2rem;
+}
+
+
